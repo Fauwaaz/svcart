@@ -59,7 +59,7 @@ const SearchBar = ({ products = [] }) => {
             if (e.key === "Enter") handleSearchSubmit(query);
           }}
           placeholder="Search products..."
-          className="text-sm py-2 border bg-transparent border-black w-full px-4 rounded-lg focus:outline-none placeholder:text-white"
+          className="text-sm py-2 border bg-transparent border-white w-full px-4 rounded-lg focus:outline-none placeholder:text-white"
         />
         {query && (
           <button

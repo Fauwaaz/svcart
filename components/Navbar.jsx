@@ -141,7 +141,7 @@ export default function Navbar({ products = [] }) {
                 onClick={() => setUserDropdown((prev) => !prev)}
                 className="flex items-center"
               >
-                <UserCircle size={24} />
+                <UserCircle size={24} className="text-white" />
               </button>
               {userDropdown && (
                 <div className="absolute right-0 mt-9 w-60 bg-white shadow-lg rounded-lg overflow-hidden py-2 px-2 z-50">
@@ -178,7 +178,7 @@ export default function Navbar({ products = [] }) {
             </div>
           ) : (
             <Link href="/auth" className="hidden lg:block">
-              <UserCircle size={24} />
+              <UserCircle size={24} className='text-white'/>
             </Link>
           )}
           <CartButton />
