@@ -1,0 +1,33 @@
+.header {
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0.5em 2em;
+  border: 1px solid #00000031;
+}
+
+.navItem {
+  margin-left: 2em;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    padding: 10px;
+  }
+
+  .nav {
+    padding: 0.5em 1.5em;
+  }
+}

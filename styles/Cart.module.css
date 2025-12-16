@@ -1,0 +1,171 @@
+/* Cart */
+
+.background {
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  /* will-change: transform;
+  transition: all 1s ease-in-out; */
+}
+
+.cart {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: white;
+  float: right;
+  position: relative;
+  z-index: 9999999999;
+}
+
+.content {
+  padding: 0em 2em;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin: 2em;
+}
+
+.heading svg {
+  font-size: 1.2rem;
+  margin-right: 0.5em;
+  margin-left: -4px;
+}
+
+.heading h3 {
+  font-size: 1.1rem;
+  margin-right: 0.5em;
+  font-weight: 600;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.empty svg {
+  font-size: 3rem;
+}
+
+.empty h3 {
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+.empty a {
+  text-transform: uppercase;
+  padding: 0.7em 2em;
+  border-radius: 8px;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.totals {
+  position: absolute;
+  right: 0;
+  bottom: 2em;
+  width: 100%;
+}
+
+.totals > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 2em;
+}
+
+.checkout {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.checkout > button {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  padding: 0.6rem 0rem;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: all 100ms ease-in;
+}
+
+.checkout > button:hover {
+  opacity: 0.95;
+}
+
+.totals h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.totals span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 320px) {
+  .cart {
+    width: 100%;
+    position: fixed;
+  }
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .quantity {
+    font-size: 0.8rem;
+  }
+
+  .quantity #minus,
+  #plus {
+    font-size: 0.7rem;
+    padding: 0px 12px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .cart {
+    width: 600px;
+    position: fixed;
+  }
+  .name {
+    font-size: 1.09rem;
+  }
+
+  .quantity {
+    font-size: 0.9rem;
+  }
+
+  .quantity #minus,
+  #plus {
+    font-size: 0.7rem;
+    padding: 0px 15px;
+  }
+}
