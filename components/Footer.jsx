@@ -13,11 +13,9 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
-      <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-20 px-6 md:px-16 lg:px-24 text-center justify-items-center md:text-left">
-          
-      
+    <footer className="bg-[#E8EFE4] flex flex-col items-center w-full">
+      <div className="flex justify-center ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 py-20 px-6 md:px-16 lg:px-24 text-center justify-items-center md:text-left max-w-[1280px] w-full">     
           <div className="flex justify-center md:justify-start">
             <Link href="/">
               <Image
@@ -61,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="py-5 px-6 md:px-16 border-t border-dashed border-gray-300 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-[1280px] w-full py-5 px-6 md:px-16 border-t border-dashed border-gray-300 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-gray-600 text-center md:text-left">
           &copy; {new Date().getFullYear()} SV Cart. All rights reserved.
         </p>

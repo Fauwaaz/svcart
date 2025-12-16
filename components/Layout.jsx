@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   return (
     <section className={styles.layout}>
       <Head>
-        <title>SV Cart - Fashion</title>
+        <title>SV Cart - 3D Print</title>
         <meta
           name="description"
           content="SV Cart - Fashion"

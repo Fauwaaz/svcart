@@ -70,13 +70,7 @@ export default function Navbar({ products = [] }) {
   }, []);
 
   const links = [
-    { href: "/products", label: "All", img: "https://dashboard.houseofrmartin.com/wp-content/uploads/2025/10/MENS-COTTON-SHIRT-LIGHT-BROWN-2-scaled.jpg" },
-    { href: "/products?category=Bestseller", label: "Bestseller", img: "https://dashboard.houseofrmartin.com/wp-content/uploads/2025/09/Two-Piece-Outfit-img-blue-1.png" },
-    { href: "/products?category=Shirts", label: "Shirts", img: "https://dashboard.houseofrmartin.com/wp-content/uploads/2025/09/Mens-Slim-Fit-Cotton-Shirt-–-Breathable-Tailored-img-2.png" },
-    { href: "/products?category=T-shirts", label: "T-shirts", img: "https://dashboard.houseofrmartin.com/wp-content/uploads/2025/09/polo-blue-4.png" },
-    { href: "/products?category=Jeans", label: "Jeans", img: "https://dashboard.houseofrmartin.com/wp-content/uploads/2025/09/Essential-Mens-Jeans-–-Classic-Denim-Slim-Fit-img-4.png" },
-    { href: "/products?category=Trousers", label: "Trousers", img: "https://dashboard.houseofrmartin.com/wp-content/uploads/2025/10/MEN_S-BAGGY-RFD-TROUSER-BLACK-scaled.jpg" },
-    { href: "/products?category=Belt", label: "Belts", img: "https://dashboard.houseofrmartin.com/wp-content/uploads/2025/10/MEN_S-BELT-R-M-777-13BLACK.jpg" },
+    { href: "/products", label: "All", img: "https://dashboard.svcart.shop/wp-content/uploads/woocommerce-placeholder.webp" },
   ]
 
   async function handleLogout() {
@@ -101,14 +95,19 @@ export default function Navbar({ products = [] }) {
   }
 
   return (
-    <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50 justify-center flex flex-col lg:flex-row">
-      <nav className="w-full flex justify-between items-center px-3 lg:px-6 py-2 max-w-1920">
+    <header className="w-full fixed top-0 left-0 z-50 justify-center flex flex-col lg:flex-row">
+      <nav className="max-w-[1280px] w-full flex justify-between items-center px-3 lg:px-6 py-2">
         {/* Hamburger */}
         <button
           className="text-2xl w-[40px] md:w-[200px] lg:w-[270px]"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
-          {menuOpen ? <X /> : <Menu className="hover:bg-gray-100 p-2 rounded-full border border-gray-100" />}
+           <Image 
+            height={40}
+            width={30}
+            unoptimized
+            src='https://dashboard.svcart.shop/wp-content/uploads/2025/12/menu-1.png'
+           />
         </button>
 
         {/* Logo */}

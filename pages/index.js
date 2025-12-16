@@ -65,7 +65,9 @@ const Home = ({ products }) => {
   return (
     <>
       <Layout>
-        <Hero />
+        {/* <Hero /> */}
+        <section className="h-[100vh] bg-[url(https://dashboard.svcart.shop/wp-content/uploads/2025/12/Frame-539.png)] bg-contain bg-center w-full flex items-center justify-center">
+        </section>
       </Layout>
     </>
   );
